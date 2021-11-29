@@ -1,0 +1,71 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	/*background: linear-gradient(to right, #FF8C00, orangered);*/
+	/*background: linear-gradient(to right, rgb(0, 53, 102), rgb(0, 38, 77),#000d1a);*/
+	margin: 0;
+	
+}
+
+.header_navbar{
+	position: fixed;
+	top: 0;
+	background-color:white;
+	margin: 0px;
+	padding: 0px;
+	height: 70px;
+	width: 100%;
+	align-content: center;
+	border-bottom: solid 2px black;
+}
+
+.nav-middle{
+	/*position: fixed;*/
+	text-align: center;
+	padding-top: 20px;
+}
+.nav-item{
+	padding: 20px 20px;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.nav-middle .icon{
+	display: none;
+}
+.sign_btn{
+	background-color: white;
+	color: 000033;
+	padding: 10px 10px;
+	border: double;
+	border-width: 8px;
+	float: right;
+	margin-right: 15px;
+}
+
+/* ------------------------------- home page --------------------------------------*/
+.home_page{
+	width: 100%;
+	height: 100vh;
+	align-content: center;
+	text-align: center;
+	background: #ffffff;
+}
+.greetings{
+	color: black;
+	padding: 30vh 90px;
+	float: none;
+}
+.greetings > h1 {
+	font-size: 50px;
+	font-weight: 200;
+}
+.greetings > h3{
+	font-size: 30px;
+	font-weight: 150;
+}
+
