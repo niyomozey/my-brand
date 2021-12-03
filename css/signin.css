@@ -1,0 +1,60 @@
+
+body{
+    background: white;
+}
+.nav-logo{
+    background: white;
+}
+.l-container{
+    width: 100%;
+    height: 80vh;
+    background: white;
+}
+.l-row{
+    width: 80%;
+    margin: auto; 
+    height: 70vh;   
+    background: teal;
+    border-radius: 20px;
+    margin-top: 10vh;
+    display: flex;
+}
+.l-col1{
+    width:40%;
+}
+.l-col1 div{
+    width: 100%;
+    margin: 20vh 10vh;
+    color: white;
+}
+.l-col1 div>h1{
+    font-size: 30px;
+}
+.l-col1 div>h3{
+    font-size: 20px;
+}
+.l-col2{
+    width:60%;
+}
+.login-form{
+    text-align: center;
+    margin-top: 10vh;
+    background: white;
+    border-radius: 20px;
+    margin-right: 20vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+.login-form div>input{
+    border-radius: 20px;
+    width: 60%;
+    border: solid 1px gray;
+    padding: 10px;
+}
+.login-form div>input:last-child{
+    background: orange;
+    cursor: pointer;
+}
+.login-form div{
+    padding: 20px;
+}

@@ -1,47 +1,200 @@
 <!DOCTYPE hmtl>
 <html>
+
 <head>
 	<title>My Portifolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./css/My Brand.css">
 	<link rel="stylesheet" type="text/css" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
 
-<header class="header_navbar">
-	<div class="nav-middle" id="topnavbar">
-		<a class="nav-item" href="#">Home</a>
-		<a class="nav-item" href="./html/about.html">About</a>
-		<a class="nav-item" href="./html/contact_me.html">Contact</a>
-		<a class="nav-item" href="./html/portifolio.html">Portifolio</a>
-		<a class="nav-item" href="./html/blogs.html">Blog</a>
-		<a href="javascript:void(0)" class="icon" onclick="myFunction()">
-			<i class="fa fa-bars fa-2x"></i>
-		</a>
-		<button class="sign_btn">Sign In/Up</button>
+	<section class="nav-logo">
+		<ul>
+			<li class="logo">MYBRAND<br>LOGO</li>
+			<div>
+				<li><a href="#">Home</a> </li>
+				<li> <a href="#about">About us</a></li>
+				<li> <a href="./html/contactus.html">Contact</a></li>
+				<li> <a href="./html/blog.html">Blog</a></li>
+				<li class="login"><button onclick="location.href='./html/signin.html'">Login</button></li>
+				<li><a class="homeIcon">
+					<i class="fa fa-bars fa-2x"></i>
+				</a></li>
+				
+			</div>			
+		</ul>
+	</section>
+	<div class="home_page">
+		<div class="home-desc">
+			<h1>I'am <span class="surname">Moise </span>Niyonkuru</h1>
+			<h3>We make your bussiness look good</h3>
+			<div>
+				<button class="home-btn">View My work</button>
+			</div>			
+			<div>
+				<button  class="home-btn">Here me</button>
+			</div>
+			
+		</div>
+		<div class="home-pc">
+			<img src="./materials/mozey pic.png" alt="My Picture">
+		</div>
+
 	</div>
-</header>
-
-<div class="home_page">
-
-	<div class="greetings">
-
-		<h1>Hello , I'am Niyonkuru Moise</h1>
-		<h3>A software engineering student.</h3>
-		<button class="scroll_down">View My Work  <i class="fa fa-arrow-down"></i></button>
-
+	<div class="about" id="about">
+		<div class="title">
+			<h1>About</h1>
+		</div>
+		<div class="about-content">
+			<div class="about-pc">
+				<div>
+					<img src="./materials/mozey pic.png" alt="profile Picture">
+			
+				</div>
+			</div>
+			<div class="about-desc">
+				<p>
+					Software engineer enthusiast, I am a self-starter, self-driven, highly motivated and a dedicated software developer. I am eager to learn new technology and willing to face challenges throughout my career as a software engineer. I have extensive education background and good experience which can help to achieve any assigned task.
+				</p>
+			</div>
+		</div>
 	</div>
+		<div class="skill">
+			<div class="title">
+				<h1>Skills</h1>
+				<p>Below is a quick overview of my main technical skills set and tool i use</p>
+			</div>
+			<div class="skills">
+				<div class="sRow">
+					<div class="sContent">
+						<p>Fontend</p>
+						<p>Html</p>
+						<p>Css</p>
+						<p>Bootstrap</p>
+						<p>Js</p>
+						<p>React /redux</p>
+					
+					</div>
+				</div>
+				<div class="sRow">
+					<div class="sContent">
+						<p>Backend</p>
+						<p>Node js</p>
+						<p>Django</p>
+						<p>Spring boot</p>
+						<p>Jsf/jsp</p>
+						<p>Mysql/mongodb,etc</p>
+					</div>
+				</div>
+				<div class="sRow">
+					<div class="sContent">
+						<p>Others</p>
+						<p>DevOps</p>
+						<p>Unit testing</p>
+						<p>Deploiment</p>
+						<p>Github</p>
+						<p>Docker</p>
+					</div>
 
-</div>
+				</div>
+				<div class="sRow">
+					<div class="sContent">
+						<p>Soft</p>
+						<p>Communication</p>
+						<p>Problem solving</p>
+						<p>Team work</p>
+						<p>Creativity</p>
+						<p>Resourcefulness</p>	
+					</div>
+				</div>
+			</div>	
 
+		</div>
+		<div class="blog">
+			<div class="title">
+				<h1>Blog</h1>
+			</div>
+			<div class="bRow">
+				<div class="bCard">
+					<div>
+						<p>How get start html</p>
+					</div>
+					<div>
+						<button onclick="location.href='./html/sblog.html'" class="readMe">Read ME</button>
+					</div>
+				</div>
+				<div class="bCard">
+					<div>
+						<p>How get start html</p>
+					</div>
+					<div>
+						<button onclick="location.href='./html/sblog.html'" class="readMe">Read ME</button>
+					</div>
+				</div>
+				<div class="bCard">
+					<div>
+						<p>How get start html</p>
+					</div>
+					<div>
+						<button onclick="location.href='./html/sblog.html'" class="readMe">Read ME</button>
+					</div>
+				</div>
+				<div class="bCard">
+					<div>
+						<p>How get start html</p>
+					</div>
+					<div>
+						<button onclick="location.href='./html/sblog.html'" class="readMe">Read ME</button>
+					</div>
+				</div>
+				<div class="bCard">
+					<div>
+						<p>How get start html</p>
+					</div>
+					<div>
+						<button class="readMe">Read ME</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
-
-<div class="myfooter">
-	
-	
-</div>
-
-<script type="text/javascript" src="./js/My brand.js"></script>
+		<div class="btm">
+			<div class="btm-container">
+				<div class="btm-left">
+					<h1>Niyonkuru Moise</h1>						
+					
+					<div>
+						
+						<a href="#"><i class="fa fa-facebook-official "></i></a>
+						<a href="#"><i class="fa fa-instagram "></i></a>					
+						<a href="#"><i class="fa fa-linkedin "></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-github "></i></a>
+					</div>
+				</div>
+				<div class="btm-right">
+					<div>
+						<!-- <p>Comment : </p> -->
+						<textarea rows="6" cols="30"> 
+						Leave a message here
+						</textarea>
+					</div>
+					<div class="send-btn">
+						<button class="home-btn">Send</button>
+					</div>
+									
+				</div>
+			</div>
+			<div class="Copyright">
+				<p>Copyright &copy Niyonkuru Moise 2020 | Designed by Niyonkuru Moise</p>
+			</div>
+		</div>
+		
+	<script type="text/javascript" src="./js/My brand.js"></script>
 </body>
+
 </html>
