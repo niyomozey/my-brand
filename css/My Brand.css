@@ -292,7 +292,7 @@ li a{
 	border: solid 1px rgb(43, 42, 42);
 }
 .readMe:hover{
-	background: rgb(155, 67, 67);
+	background: orange;
 	color: white;
 }
 /* --------footer------ */
