@@ -1,27 +1,24 @@
 html{
 	scroll-behavior: smooth;
 }
-body{
-	/*background: linear-gradient(to right, #FF8C00, orangered);*/
-	/*background: linear-gradient(to right, rgb(0, 53, 102), rgb(0, 38, 77),#000d1a);*/
-	margin: 0;
+body{margin: 0;
 	background:#a3dcdc;	
-	/* background: ; */
 	font-family: 'Roboto';
 }
 
-.nav-logo{
+.navbar{
 	width: 100%;
 	background: #a3dcdc;;
+	
 }
-.nav-logo ul{
+.nav-list{
 	list-style-type: none;
 	list-style: none;
 	text-align: center;
 	padding-top: 20px;
+	text-align: center;
 }
-
-.nav-logo div{
+.navbar div{
 	margin-top: 10px;
 	text-align: right;
 }
@@ -48,7 +45,6 @@ body{
 li{
 	display: inline;
 	padding: 0px 20px;	
-	float: none;
 }
 li a{
 	text-decoration: none;
@@ -64,7 +60,6 @@ li a{
 	font-size: large;
 	letter-spacing: 1ch;
 	text-align: left;
-	/* padding: 20px; */
 	text-decoration: none;
 }
 
@@ -77,51 +72,54 @@ li a{
 	float: right;
 	margin-right: 15px;
 }
+
 @media screen and (max-width: 600px) {
-	.nav-logo ul{
+	ul{
 		display: none;
 	}
 	.homeIcon{
 		display: block;
+		text-align: center;
+		width: 100%;
+		padding: 10px;
+		color: white;
+		border-bottom: solid 2px black;
 	}
-	
+	.homeIcon i{
+		background: teal;
+		padding: 5px;
+	}
 }
-
 /* ------------------------------- home page --------------------------------------*/
 .home_page{
 	width: 100%;
 	height: 90vh;
-	/* background: #ffffff; */
-	background: #a3dcdc;	
+	background: #a3dcdc;
+	display: flex;
+
 }
+
 .home-desc{
 	width: 40%;
-	/* border: solid 1px red; */
-	float: left;
 	margin-top: 25vh;
 	text-align: left;
 	margin-left: 80px;
 }
 .home-desc h1{
 	font-size: 40px;
-
 }
 .home-desc h3{
 	font-size: 30px;
-
 }
 .home-desc div{
 	float: left;
 	width: 30%;
-	padding-block: 10px;
-	padding: 10px;
 }
 .home-pc{
 	width: 50%;	
-	float: right;
-	/* border: solid 1px red; */
 	height: 70vh;
 	margin-top: 20px;
+	
 }
 .home-pc img{
 	width: 100%;
@@ -140,15 +138,52 @@ li a{
 	border: none;
 	border-radius: 50px;
 	cursor: pointer;
+	-webkit-box-shadow: 1px 5px 12px 4px rgba(0,0,0,0.73); 
+	box-shadow: 1px 5px 12px 4px rgba(0,0,0,0.73);
+}
+@media screen and (max-width: 600px) {
+	.home_page{
+		width: 100%;
+		height: 60vh;
+	}
+	.home-desc{
+		width: 50%;
+		text-align: left;
+		margin-left: 0px;
+		margin-top: 15vh;
+		position: absolute;
+
+	}
+	.home-desc h1{
+		font-size: 25px;
+	}
+	.home-desc h3{
+		font-size: 18px;
+	}
+	.home-desc div{
+		width: 100%;
+		text-align: center;
+		margin-left: 60%;
+		padding: 18px 0px;
+	}
+	.home-pc{
+		width: 80%;
+		height: 40%;
+		margin-left: 20%;
+		margin-top: 80px;
+	}
+	.home-pc img{
+		margin-left: 40px;
+	}
+	
 }
 /* ------------About page------------------ */
 .about{
 	width: 100%;
 	height: 90vh;
-	background: white;
+	background: rgb(243, 231, 231);
 }
 .title{
-	width: 100%;
 	text-align: center;
 	color: orange;
 	padding: 20px;
@@ -164,14 +199,9 @@ li a{
 	margin: auto;
 	justify-content: center;
 	align-items: center;
-	/* flex-flow: column;
-	flex-wrap: wrap; */
-	/* flex-direction: column; */
-	/* border: solid 1px red; */
 }
 .about-pc{
 	width: 20%;
-	/* border: solid 1px red; */
 	text-align: center;
 	float: left;
 	margin-left: 10vh;
@@ -188,14 +218,12 @@ li a{
 .about-pc div>img{
 	width: 100%;
 	height: 100%;
-	/* border-radius: 50%; */
 	border-radius: 50%;
 	border: solid 1px gray;
 	background: orange;
 }
 .about-desc{
 	width: 58%;
-	/* border: solid 1px red; */
 	float: left;
 	margin-top: 15vh;
 	margin-left: 25vh;
@@ -216,11 +244,9 @@ li a{
 	height: 90vh;
 	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../materials/laptop.jpg");
 	background-size: 100%;
-	/* border: solid 1px red; */
 }
 .skills{
 	display: flex;
-	/* flex-direction: row; */
 	justify-content: space-around;
 }
 .sRow{
