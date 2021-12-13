@@ -1,0 +1,23 @@
+{
+  "name": "my-brand",
+  "version": "1.0.0",
+  "description": "Niyonkuru Moise personal brand we",
+  "main": "index.js",
+  "dependencies": {
+    "firebase": "^9.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niyomozey/my-brand.git"
+  },
+  "author": "Niyonkuru Moise",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niyomozey/my-brand/issues"
+  },
+  "homepage": "https://github.com/niyomozey/my-brand#readme"
+}

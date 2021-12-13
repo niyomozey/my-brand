@@ -1,78 +1,37 @@
 <!DOCTYPE hmtl>
 <html>
 <head>
-	<title>Portifolio</title>
+	<title>dashboard</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <link rel="stylesheet" type="text/css" href="../css/My Brand.css"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="../css/portfolio.css"> -->
+	<link rel="stylesheet" type="text/css" href="../css/My Brand.css"> 
+	<link rel="stylesheet" type="text/css" href="../css/dashboard.css"> 
 	<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<section class="nav-logo">
-		<ul>
-			<li class="logo">MYBRAND<br>LOGO</li>
+	<div class="navbar" id="navbar">		
+		<a href="javascript:void(0)" onclick="myFunction()" class="homeIcon" id="hicon">
+			<i class="fa fa-bars fa-2x" id="ic"></i>
+		</a>
+		<ul class="nav-list" id="topnavbar">			
+			<li class="logo">NIYONKURU<br>MOISE</li>
 			<div>
-				<li><a href="../my Brand.html">Home</a> </li>
-				<li> <a href="../my Brand.html#about">About us</a></li>
-				<li> <a href="./contactus.html">Contact</a></li>
-				<li> <a href="#">Blog</a></li>
-				<li class="login"><button>Login</button></li>
+				<li><a href="#">Home</a> </li>
+				<li> <a href="#about">About us</a></li>
+				<li> <a href="./html/contactus.html">Contact</a></li>
+				<li> <a href="./html/blog.html">Blog</a></li>
+				<li class="login"><button onclick="location.href='./html/signin.html'">Login</button></li>
+								
 			</div>			
-		</ul>
-	</section>
+		</ul>		
+	</div>
 
-	<div class="pContainer">
-		<div class="pRow">
-			<div class="pColumn">
-				<div class="pCard">
-
-					<div class="pCard_header">
-						<img src="../materials/643363.jpg" alt="">
-						
-					</div>
-					<div class="pDescription">
-						<a href="#"><h3>Java Socket: chat program</h3></a>
-					</div>
-				</div>
-			</div>
-			<div class="pColumn">
-				<div class="pCard">
-
-					<div class="pCard_header">
-						<img src="../materials/643363.jpg" alt="">
-						
-					</div>
-					<div class="pDescription">
-						<a href="./sblog.html"><h3>Web design: Personal portifolio </h3></a>
-					</div>
-				</div>
-			</div>
-			<div class="pColumn">
-				<div class="pCard">
-
-					<div class="pCard_header">
-						<img src="../materials/643363.jpg" alt="">
-						
-					</div>
-					<div class="pDescription">
-						<a href="./sblog.html"><h3>Web design: Personal portifolio </h3></a>
-					</div>
-				</div>
-			</div>
-			<div class="pColumn">
-				<div class="pCard">
-					<div class="pCard_header">
-						<img src="../materials/643363.jpg" alt="">
-						
-					</div>
-					<div class="pDescription">
-						<a href="./sblog.html"><h3>Java Programing:Library management System</h3></a>
-					</div>
-				</div>
-			</div>
+	<div class="dcontainer">
+		<div class="drow">
+			<h1>Still in building</h1>
 		</div>
 	</div>
 
+	<script type="text/javascript" src="./js/My brand.js"></script>
 </body>
 </html>

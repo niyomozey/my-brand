@@ -2,6 +2,9 @@
 body{
     background: white;
 }
+.navbar{
+    background: white;
+}
 .nav-logo{
     background: white;
 }
@@ -14,6 +17,16 @@ body{
     width: 80%;
     margin: auto; 
     height: 70vh;   
+    background: teal;
+    border-radius: 20px;
+    margin-top: 10vh;
+    display: flex;
+    
+}
+.s-row{
+    width: 80%;
+    margin: auto; 
+    /* height: vh;    */
     background: teal;
     border-radius: 20px;
     margin-top: 10vh;
@@ -49,12 +62,50 @@ body{
     border-radius: 20px;
     width: 60%;
     border: solid 1px gray;
-    padding: 10px;
+    padding: 8px;
 }
 .login-form div>input:last-child{
     background: orange;
     cursor: pointer;
 }
 .login-form div{
-    padding: 20px;
+    padding: 10px;
+}
+
+/* signup */
+#send{
+    text-align: center;
+}
+.login-form div>p{
+    color: red;
+}
+.signinMessage{
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .s-row{
+        width: 100%;
+        display: block;
+    }
+    .l-row{
+        width: 100%;
+        display: block;
+    }
+    .l-col1{
+        width: 100%;
+        text-align: center;
+    }
+    .l-col1 div{
+        margin: 0px;
+    }
+    .l-col2{
+        width: 100%;
+        text-align: center;
+    }
+    .login-form{
+        margin: 0px;
+        margin: auto;
+        width: 80%;
+    }
 }

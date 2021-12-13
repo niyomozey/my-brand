@@ -1,5 +1,6 @@
 <!DOCTYPE hmtl>
 <html>
+
 <head>
 	<title>Portifolio</title>
 	<meta charset="utf-8">
@@ -7,7 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="../css/My Brand.css">
 	<link rel="stylesheet" type="text/css" href="../css/signin.css">
 	<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js"></script>
 </head>
+
 <body>
 	<section class="nav-logo">
 		<ul>
@@ -18,32 +21,84 @@
 				<li> <a href="#">Contact</a></li>
 				<li> <a href="./blog.html">Blog</a></li>
 				<li class="login"><button>Login</button></li>
-			</div>			
+			</div>
 		</ul>
 	</section>
-    <div class="l-container">
-        <div class="l-row" style="height: 100vh;">
-            <div class="l-col1">
+	<div class="l-container">
+		<div class="l-row" style="height: 100vh;">
+			<div class="l-col1">
 				<div>
-					<h1>Am pleased 
-                        to have a conversation with you</h1>
+					<h1>Am pleased
+						to have a conversation with you</h1>
 				</div>
-				
-            </div>
-            <div class="l-col2">
-                <form class="login-form" action="">
-					<div><input type="text" name="username" placeholder="Fullname"><br></div>
-                    <div><input type="password" name="password" placeholder="Email"><br></div>
-                    <div><input type="password" name="password" placeholder="Telephone"><br></div>
-                    <div><input type="password" name="password" placeholder="Adress"><br></div>
-                    <div>
-                        <textarea name="message" id="message" cols="30" rows="5">Leave a message</textarea>
-                    </div>
-                    <div><input type="submit" name="send" value="send"></div>
-                    
-                </form>
-            </div>
-        </div>
-    </div>
+
+			</div>
+			<div class="l-col2">
+				<form class="login-form">
+					<div><input id="fullname" type="text" name="username" placeholder="Fullname"><br></div>
+					<div><input id="email" type="email" name="email" placeholder="Email"><br></div>
+					<div><input id="telphone" type="text" name="telphone" placeholder="Telephone"><br></div>
+					<div><input id="address" type="text" name="address" placeholder="Address"><br></div>
+					<div>
+						<textarea name="message" id="message" cols="30" rows="5"
+							placeholder="Leave a message"></textarea>
+					</div>
+					<div><input id="sendMessage" name="sendMessage" value="send"></div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script type="module">
+		
+		import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js';
+		import { getDatabase, ref, set } from 'https://www.gstatic.com/firebasejs/9.6.0/firebase-database.js';
+
+		const firebaseConfig = {
+			apiKey: "AIzaSyAX7RJI8ZtO6gDI2NRal8lYc-LrZZgqDBQ",
+			authDomain: "mybrand-91d07.firebaseapp.com",
+			projectId: "mybrand-91d07",
+			databaseUrl: "https://mybrand-91d07-default-rtdb.firebaseio.com/",
+			storageBucket: "mybrand-91d07.appspot.com",
+			messagingSenderId: "893040789211",
+			appId: "1:893040789211:web:5dfbbcf8d3b1ba010beefe"
+		};
+		const app = initializeApp(firebaseConfig);
+		document.querySelector("#sendMessage").addEventListener("click", function () {
+			console.log("button clicked")
+			const fullname = document.querySelector("#fullname").value
+			const email = document.querySelector("#email").value
+			const telphone = document.querySelector("#telphone").value
+			const address = document.querySelector("#address").value
+			const message = document.querySelector("#message").value
+			writeUserData(fullname, email, telphone, address, message)
+			console.log(fullname)
+			console.log(email)
+			console.log(telphone)
+			console.log(message)
+		})
+
+		// create -- save data
+		function writeUserData(fullname, email, telphone, address, message) {
+			const db = getDatabase();
+			set(ref(db, '/contact/'+telphone), {
+				fullname: fullname,
+				telphone: telphone,
+				address: address,
+				message: message
+			}).then(() => {
+				console.log("stored succesfull")
+			}).catch((error) => {
+				console.log(error)
+			})
+		}
+		function selectAll(){
+			ref().set
+		}
+
+
+	</script>
 </body>
+
 </html>
