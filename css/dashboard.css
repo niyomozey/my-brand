@@ -1,9 +1,30 @@
+body{
+    background: white;
+}
+.navbar{
+    background: white;
+}
 .dcontainer{
     width: 100%;
 }
 .drow{
-    background: teal;
     height: 100vh;
     width: 80%;
-    margin: auto;    
+    margin: auto;  
+    text-align: center;  
+    
+}
+table{
+    text-align: center;
+    border: none;
+    border-collapse: collapse;
+}
+table tr:first-child{
+    background: teal;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+td{
+    padding: 10px;
 }

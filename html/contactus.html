@@ -51,7 +51,7 @@
 	</div>
 
 	<script type="module">
-		
+
 		import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js';
 		import { getDatabase, ref, set } from 'https://www.gstatic.com/firebasejs/9.6.0/firebase-database.js';
 
@@ -89,6 +89,7 @@
 				message: message
 			}).then(() => {
 				console.log("stored succesfull")
+				location.href = '../my Brand.html';
 			}).catch((error) => {
 				console.log(error)
 			})
