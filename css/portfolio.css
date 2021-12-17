@@ -7,21 +7,22 @@ body{
 .pContainer{
 	margin: 0;
 	margin-top: 15vh;
-
 }
 .pRow{
 	width: 80%;
 	margin: auto;
+	display: flex;
 }
 .pColumn{
-	display: inline-block;
-	width: 28%;
-	padding: 10px 25px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .pCard{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	width: 90%;
-	margin: 0;
+	width: 40%;
+	margin: 10px;
 	padding-top: 0;
 }
 .pCard_header{

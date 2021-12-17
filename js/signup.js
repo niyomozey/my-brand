@@ -17,7 +17,7 @@ const db = getDatabase();
 
 document.querySelector("#send").addEventListener("click", function () {
     console.log("button clicked")
-    const fullname = document.querySelector("#fullname").value
+    const fullname = updBtnupdBtn("#fullname").value
     const email = document.querySelector("#email").value
     const telphone = document.querySelector("#telphone").value
     const username = document.querySelector("#username").value
@@ -106,7 +106,7 @@ function isValidate(data) {
     }
 
     if(data.telphone.length!=10){
-        console.log('telphone error')
+        console.log('t.fullnameelphone error')
         errors.telphone='telphone error'
         count++
     }

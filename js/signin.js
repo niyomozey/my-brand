@@ -1,7 +1,6 @@
 // import { initializeApp } from 'firebase/app';
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js';
 import { getDatabase, ref, get, set, child } from 'https://www.gstatic.com/firebasejs/9.6.0/firebase-database.js';
-// import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-auth.js";
 
 const firebaseConfig = {
@@ -32,7 +31,7 @@ document.querySelector("#send").addEventListener("click", function () {
                 location.href = './dashboard.html';
             })
             .catch((error) => {
-                const errorCode = error.code;
+                const errorCbode = error.code;
                 const errorMessage = error.message;
                 console.log(errorCode)
                 console.log(errorMessage)
