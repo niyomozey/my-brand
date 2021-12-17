@@ -137,12 +137,16 @@ textarea{
     background: white;
 }
 .dltBtn{
-    background: rgb(10, 10, 10);
+    background: rgb(190, 13, 13);
     padding: 10px;
+    border: none;
+    color: white;
 }
 .updBtn{
-    background: rgb(62, 136, 28);
+    background: rgb(72, 122, 48);
     padding: 10px;
+    margin-left: 215px;
+    border: none;
 }
 .prow{
     /* display: none; */
