@@ -12,7 +12,7 @@ body{
 .left-col{
     border: solid 1px teal;
     width: 20%;
-    height: 80vh;
+    height: 100vh;
     position: fixed;
 }
 

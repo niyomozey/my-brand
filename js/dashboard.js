@@ -25,7 +25,7 @@ logout.addEventListener('click',function(){
           const uid = user.uid;
 
           signOut(auth).then(() => {
-             location.href='../my Brand.html';
+             location.href='../index.html';
           }).catch((error) => {
                 console.log('on logs found')
           });
@@ -42,7 +42,7 @@ onAuthStateChanged(auth, (user) => {
     } else {
       
       alert('First login');
-      location.href='../my Brand.html';
+      location.href='../index.html';
     }
   });
 
