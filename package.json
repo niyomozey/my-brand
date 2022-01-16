@@ -1,14 +1,15 @@
 {
   "name": "my-brand",
   "version": "1.0.0",
-  "description": "Niyonkuru Moise personal brand we",
+  "description": "Niyonkuru Moise personal brand",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
     "firebase": "^9.6.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -16,6 +17,7 @@
   },
   "author": "Niyonkuru Moise",
   "license": "ISC",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/niyomozey/my-brand/issues"
   },
