@@ -1,9 +1,7 @@
-import express from 'express';
-import userRouter from './src/route/user.js';
-const app = express()
+import app from './app'
 
-const port = 1111;
-app.set('view engine','ejs')
-app.use('/niyo',userRouter)
-app.listen(port)
-console.log(`Connected on ${port} port`)
+const port = process.env.port || 1111;
+
+app.listen(port, ()=>{
+    console.log(`Connected on ${port} port`)
+})
