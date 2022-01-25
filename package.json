@@ -20,8 +20,9 @@
     "validator": "^13.7.0"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "npm run build",
     "dev": "nodemon --exec babel-node index.js",
+    "build": "babel-node index.js",
     "test": "jest"
   },
   "repository": {
@@ -45,7 +46,6 @@
     "jest-extended": "^1.2.0",
     "supertest": "^6.2.2"
   },
-  "type": "module",
   "jest": {
     "verbose": true,
     "testEnvironment": "node",
