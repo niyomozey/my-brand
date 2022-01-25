@@ -20,7 +20,7 @@
     "validator": "^13.7.0"
   },
   "scripts": {
-    "start": "node --exec babel-node index.js",
+    "start": "node index.js",
     "dev": "nodemon --exec babel-node index.js",
     "test": "jest"
   },
