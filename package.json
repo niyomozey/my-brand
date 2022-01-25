@@ -22,7 +22,6 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon --exec babel-node index.js",
-    "heroku-postbuild": "npm run dev",
     "test": "jest"
   },
   "repository": {
