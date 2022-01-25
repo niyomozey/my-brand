@@ -22,6 +22,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon --exec babel-node index.js",
+    "heroku-postbuild": "npm run dev",
     "test": "jest"
   },
   "repository": {
@@ -45,6 +46,7 @@
     "jest-extended": "^1.2.0",
     "supertest": "^6.2.2"
   },
+  "type": "module",
   "jest": {
     "verbose": true,
     "testEnvironment": "node",
