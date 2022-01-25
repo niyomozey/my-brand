@@ -22,7 +22,7 @@
   "scripts": {
     "start": "npm run build",
     "dev": "nodemon --exec babel-node index.js",
-    "build": "babel-node index.js",
+    "build": "babel src -d dist",
     "test": "jest"
   },
   "repository": {
