@@ -7,9 +7,9 @@ import blog from '../models/blog'
 import user from '../models/user'
 import express from 'express'
 import Blog from '../models/blog';
-import upload from '../config/multerConf';
 import imageProcessor from '../middleware/blogImageProcessor.js'
 import {pick} from 'lodash'
+import validator from 'validator';
 
 export default new class userController{
     
@@ -94,5 +94,25 @@ export default new class userController{
             return res.status(404).send({message:"unable to delete"})
         }
         res.send({message:'User deleted successfully',article})
+    }
+    async updateProfilePicture(req, res, next){
+        const User = Object.keys(req.body)
+        const allowedUser = ['avatar','tokens']
+        const isUserValid = User.every((userProp)=> {
+            allowedUser.includes(userProp)
+        })
+        // if(!isUserValid){
+        //     return res.status(404).send({
+        //         message:'Invalid Data fields'
+        //     })
+        // }
+        const profile = await user.findByIdAndUpdate(req.params.id, {'avatar':req.body.avatar},{new:true,runvalidator:true});
+        if(!profile){
+            return res.status(404).send("User profile you're try to reach out!!doesnt exist")
+        }
+        res.send({
+            message: 'Profile pictures update successfully',
+            profile
+        })
     }
 }

@@ -2,7 +2,7 @@ import verifyUser from '../middleware/verifyUser';
 import auth from '../middleware/auth'
 import express from 'express'
 import Blog from '../models/blog';
-import upload from '../config/multerConf';
+import upload from '../config/UserMulterConf';
 import {pick} from 'lodash'
 import userController from '../controllers/userController'
 import imageProcessor from '../middleware/userImageProcessor'
@@ -16,12 +16,10 @@ userRouter.get('/home',(req, res)=>{
 })
 userRouter.post('/login',userController.login)
 userRouter.post('/logout',auth, userController.logout)
-userRouter.post('/signup',upload.single('avatar'),[verifyUser.checkDuplicateEmail],imageProcessor, userController.signup)
-userRouter.put('/update/:id',upload.single('avatar'),imageProcessor, userController.update)
-userRouter.get('/profile',userController.profile)
-userRouter.get('/delete/:id',userController.delete)
-// userRouter.post('/signup',(req, res)=>{
-//     console.log(req.body)
-// })
+userRouter.post('/signup',auth,upload.single('avatar'),[verifyUser.checkDuplicateEmail],imageProcessor, userController.signup)
+userRouter.put('/update/:id',auth,upload.single('avatar'),imageProcessor, userController.update)
+userRouter.post('/changeppic/:id',auth,upload.single('avatar'),imageProcessor, userController.updateProfilePicture)
+userRouter.get('/profile',auth,userController.profile)
+userRouter.get('/delete/:id',auth,userController.delete)
 export default userRouter;
 

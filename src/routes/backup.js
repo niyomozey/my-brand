@@ -7,7 +7,6 @@ import blog from '../models/blog'
 import user from '../models/user'
 import express from 'express'
 import Blog from '../models/blog';
-import upload from '../config/multerConf';
 import imageProcessor from '../middleware/blogImageProcessor.js'
 import {pick} from 'lodash'
 
