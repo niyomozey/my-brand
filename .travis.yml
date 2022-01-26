@@ -1,0 +1,10 @@
+  language: node_js
+  node_js:
+    - 'stable'
+  services:
+    - 'mongodb'
+  cashe:
+    directories:
+      - 'node_modules';
+  script:
+    - 'npm run test'
