@@ -4,7 +4,7 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 
 var _app = _interopRequireDefault(require("./app"));
 
-var port = process.env.port || 1111;
+var port = process.env.PORT || 1111;
 
 _app["default"].listen(port, function () {
   console.log("Connected on ".concat(port, " port"));
