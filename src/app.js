@@ -1,12 +1,12 @@
 import express from 'express';
-import userRouter from './src/routes/userRouters';
-import blogRouter from './src/routes/blogRouters';
-import commentRouter from './src/routes/commentRouters';
-import contactRouter from './src/routes/contactRouters';
+import userRouter from './routes/userRouters';
+import blogRouter from './routes/blogRouters';
+import commentRouter from './routes/commentRouters';
+import contactRouter from './routes/contactRouters';
 
 import bodyParser from 'body-parser'
 import cookieParser from 'cookie-parser'
-import db from './src/db/con.js'
+import db from './db/con.js'
 const app = express()
 
 
