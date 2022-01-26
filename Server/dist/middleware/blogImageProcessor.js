@@ -15,9 +15,12 @@ var _sharp = _interopRequireDefault(require("sharp"));
 
 var _multer = _interopRequireDefault(require("multer"));
 
+var _appRootPath = _interopRequireDefault(require("app-root-path"));
+
 var storage = _multer["default"].diskStorage({
   destination: function destination(req, file, cb) {
-    cb(null, './uploads/blogImages/');
+    // cb(null, './uploads/blogImages/')
+    cb(null, _appRootPath["default"].path + '/src/uploads/blogImages/');
   },
   filename: function filename(req, file, cb) {
     cb(null, file.filename);

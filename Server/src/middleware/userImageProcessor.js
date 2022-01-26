@@ -1,9 +1,11 @@
 import sharp from 'sharp'
 import multer from 'multer'
+import appRoot from 'app-root-path';
 
 const storage = multer.diskStorage({
     destination: function(req, file, cb){
-        cb(null, './uploads/')
+        // cb(null, './uploads/profilePictures/')
+        cb(null, appRoot.path+'/src/uploads/profilePictures/')
     },
     filename:function(req,file,cb){
         cb(null, file.filename)
