@@ -10,8 +10,10 @@ const app = express()
 blogRouter.get('/blogs',blogController.getAll)
 blogRouter.get('/blog/:id',blogController.findBlogById)
 blogRouter.delete('/deleteArticle/:id',auth,blogController.delete)
-blogRouter.post('/createBlog',auth,upload.single('photo'),imageProcessor,blogController.createBlog)
-blogRouter.patch('/updateArticle/:id',auth,upload.single('photo'),imageProcessor,blogController.update)
+blogRouter.post('/createBlog',auth,blogController.createBlog)
+// blogRouter.post('/createBlog',auth,upload.single('photo'),imageProcessor,blogController.createBlog)
+// blogRouter.patch('/updateArticle/:id',auth,upload.single('photo'),imageProcessor,blogController.update)
+blogRouter.patch('/updateArticle/:id',auth,blogController.update)
 
 export default blogRouter;
 

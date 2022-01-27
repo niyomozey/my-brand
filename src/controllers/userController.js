@@ -19,7 +19,7 @@ export default new class userController{
         try {
             const User = await user.findByCredentials(data.email, data.password)
             const token = await User.generateAuthToken();
-            res.cookie('jwtoken',token)
+            // res.cookie('jwtoken',token)
             res.header("Authorization",token).send({user: User.getPublicProfile()}) 
         } catch (error) {
             res.status(400).send({
@@ -63,7 +63,6 @@ export default new class userController{
         delete User.cpassword
         const allowedUser = ['fullname','username','telphone','email','password','avatar','tokens']
         const isUserValid = User.every((userProp)=> {
-            console.log(userProp)
             allowedUser.includes(userProp)
         })
         if(!isUserValid){

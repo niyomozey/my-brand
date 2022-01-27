@@ -1,5 +1,4 @@
 import 'jest-extended'
-import {ObjectId} from 'mongodb'
 import app from '../../app'
 import User from '../models/user'
 import supertest from 'supertest'
