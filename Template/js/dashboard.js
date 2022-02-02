@@ -94,7 +94,6 @@ logout.addEventListener('click',function(){
             }),
             headers:{
                 'content-type': 'application/json;charset=utf-8',
-                'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWVhOGQ4MzFhYjdlNWVkODNkZDRiNmYiLCJpYXQiOjE2NDMxMzkxOTF9.-fLNjvSFGKc6ES-3cceDgcnmuixL_vlKU6q4_0FBoAA'
             }
     
         }).then(res => res.json())
