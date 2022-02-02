@@ -1,0 +1,473 @@
+html{
+	scroll-behavior: smooth;
+}
+body{margin: 0;
+	background:#a3dcdc;	
+	font-family: 'Roboto';
+}
+
+.navbar{
+	width: 100%;
+	background: #a3dcdc;
+	/* border: solid 4px black; */
+	/* background: black;	 */
+}
+.nav-list{
+	list-style-type: none;
+	list-style: none;
+	text-align: center;
+	/* padding-top: 20px; */
+	text-align: center;
+	/* border: solid 1px red; */
+}
+.navbar div{
+	margin-top: 10px;
+	text-align: right;
+	/* border: solid 1px green; */
+}
+.logo{
+	float: left;
+	color: orange;
+	font-weight: 900;
+	font-size: 30px;
+	margin-left: 40px;
+	text-align: center;
+}
+.login{
+	text-align: left;
+	padding-left: 300px;
+}
+.login button{
+	text-align: left;
+	padding: 8px 25px;
+	background: rgb(228, 148, 1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+}
+li{
+	display: inline;
+	padding: 0px 20px;	
+}
+li a{
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+.homeIcon{
+	display: none;
+}
+.logo{
+	color: orange;
+	font-weight: 700;
+	font-size: large;
+	letter-spacing: 1ch;
+	text-align: left;
+	text-decoration: none;
+}
+
+.sign_btn{
+	background-color: white;
+	color: 000033;
+	padding: 10px 10px;
+	border: double;
+	border-width: 8px;
+	float: right;
+	margin-right: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+	.navbar{
+		width: 100%;
+	}
+	ul{
+		display: none;
+	}
+	.homeIcon{
+		display: block;
+		text-align: center;
+		width: 100%;
+		padding: 10px 0px;
+		color: white;
+		/* border-bottom: solid 2px black; */
+	}
+	.homeIcon i{
+		background: teal;
+		padding: 5px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.navbar.responsive{
+		background: teal;
+		text-align: center;	
+		scrollbar-width: none;
+    	-ms-overflow-style: none;
+	}
+	.homeIcon.responsive{
+		text-align: right;
+		background: teal;
+		padding: 10px 0px;
+		margin: 0px;
+	}
+	.nav-list.responsive .logo{
+		font-weight: 600;
+		font-size: 40px;
+	}
+	.nav-list.responsive{
+		position: relative;
+		background: teal;
+		display: block;
+		height: 100%;
+		text-align: center;
+		justify-content: center;
+	}
+	.nav-list.responsive li{
+		float: none;
+		display: block;
+		text-align: center;	
+		margin: 0px;
+		padding: 20px 0px;
+	}
+	.nav-list.responsive li>a{
+		font-size: 30px;color: white;
+	}
+	.nav-list.responsive .login>button{
+		width: 40%;
+		text-align: center;
+		padding: 10px;
+		font-size: 20px;
+	}
+
+}
+/* ------------------------------- home page --------------------------------------*/
+.home_page{
+	width: 100%;
+	height: 90vh;
+	background: #a3dcdc;
+	display: flex;
+
+}
+.home-desc{
+	width: 40%;
+	margin-top: 25vh;
+	text-align: left;
+	margin-left: 80px;
+}
+.home-desc h1{
+	font-size: 40px;
+}
+.home-desc h3{
+	font-size: 30px;
+}
+.home-desc div{
+	float: left;
+	width: 30%;
+}
+.home-pc{
+	width: 50%;	
+	height: 70vh;
+	margin-top: 20px;
+	
+}
+.home-pc img{
+	width: 100%;
+	height: 100%;
+}
+.surname{
+	color: orange;
+	font-weight: 700;
+	display: inline;	
+}
+.home-btn{
+	text-align: left;
+	padding: 8px 25px;
+	background: rgb(228, 148, 1);
+	font-weight: 900;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	-webkit-box-shadow: 1px 5px 10px 4px rgba(138, 138, 138, 0.73); 
+	box-shadow: 1px 5px 10px 4px rgba(138, 138, 138, 0.73);
+}
+@media screen and (max-width: 600px) {
+	.home_page{
+		width: 100%;
+		height: 60vh;
+	}
+	.home-desc{
+		/* width: 50%; */
+		text-align: left;
+		margin-left: 0px;
+		margin-top: 15vh;
+		position: absolute;
+	}
+	.home-desc h1{
+		font-size: 25px;
+	}
+	.home-desc h3{
+		font-size: 18px;
+	}
+	.home-desc div{
+		width: 100%;
+		text-align: center;
+		margin-left: 60%;
+		padding: 18px 0px;
+	}
+	.home-pc{
+		width: 80%;
+		height: 40%;
+		margin-left: 20%;
+		margin-top: 80px;
+	}
+	.home-pc img{
+		margin-left: 40px;
+	}
+	
+}
+/* ------------About page------------------ */
+.about{
+	width: 100%;
+	height: 90vh; 
+	background: rgb(255, 255, 255); 
+
+}
+.title{
+	text-align: center;
+	color: orange;
+	padding: 20px;
+}
+.title h1{
+	width: 10%;
+	margin: auto;
+	border-bottom: solid 3px orange;
+}
+.about-content{
+	width: 86%;
+	height: 70vh;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+}
+.about-pc{
+	width: 20%;
+	text-align: center;
+	float: left;
+	margin-left: 10vh;
+	height: 30vh;
+	margin-top: 20vh;
+	align-items: center;
+}
+.about-pc div{
+	width: 88%;
+	height: 170px;
+	margin: auto;
+	
+}
+.about-pc div>img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: solid 1px gray;
+	background: orange;
+}
+.about-desc{
+	width: 58%;
+	float: left;
+	margin-top: 15vh;
+	margin-left: 25vh;
+	padding: 10px;
+	background: rgb(211, 211, 211);
+	border-radius: 20px;
+}
+.about-desc p{
+	padding: 20px 5px;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 20px;
+	font-weight: 300;
+}
+@media screen and (max-width:600px){
+	.about{
+		height: unset;
+	}
+	.about-content{
+		display: flex;
+		height: unset;
+	}
+	.about-desc{
+		border: solid 1px black;
+		/* float: right; */
+	}
+	.about-pc{
+		float: none;
+		margin: 0px;
+		width: 40%;
+	}
+	.about-desc{
+		float: auto;
+		margin: 0px;
+	}
+}
+
+/* -----Skill------- */
+ .skill{
+	/* height: 90vh; */
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../materials/laptop.jpg");
+	background-size: 100%;
+}
+.skills{
+	display: flex;
+	justify-content: space-around;
+	padding: 30px;
+}
+.sRow{
+	background: white;
+	border-radius: 15px;
+	width: 18%;
+	height: 50vh;
+	text-align: center;
+}
+.sContent p:first-child{
+	padding: 20px;
+	font-weight: 500;
+	color: rgb(42, 81, 187);
+	font-size: 18px;
+}
+
+@media screen and (max-width:600px) {
+	.skills{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.skill{
+		height: unset;
+	}
+	.sRow{
+		width: 40%;
+		margin: auto;
+		height: auto;
+		padding: 20px;
+		margin-top: 10px;		
+	}
+
+}
+
+/* -----blog------- */
+.blog{
+	/* height: 80vh; */
+	background: white;
+}
+.bRow{
+	width: 70%;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.bCard{
+	width: 25%;
+	height: 25vh;
+	border: solid 1px rgb(86, 143, 135);
+	margin: 20px 20px;
+	text-align: center;
+}
+.bCard:hover{
+	background: rgb(208, 235, 231);
+	
+}
+.readMe{
+	cursor: pointer;
+	padding: 10px 20px;
+	background: transparent;
+	border-radius: 10px;
+	border: solid 1px rgb(43, 42, 42);
+}
+.readMe:hover{
+	background: orange;
+	color: white;
+}
+
+@media screen and (max-width:600px) {
+	.bRow{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.blog{
+		height: unset;
+	}
+}
+
+/* --------footer------ */
+.btm{
+	background: teal;
+	height: 50vh;
+	width: 100%;
+}
+.btm-container{
+	width: 100%;
+	display: flex;
+	height: 45vh;
+}
+.btm-left{
+	width: 60%;	
+	margin-left: 200px;
+	margin-top: 35px;
+	text-align: left;
+}
+.btm-left div{
+	padding: 20px 0px;
+}
+.btm-left div>a{
+	margin-left: 10px;
+	border: solid 1px black;
+	padding: 10px;
+	border-radius: 50%;
+	text-decoration: none;	
+	color: black;
+}
+
+.btm-left div>a:hover{
+	background: white;
+}
+.btm-right textarea{
+	text-align: left;
+	border-radius: 20px;
+	margin-top: 10vh;
+}
+.send-btn{
+	margin-left: 10vh;
+	text-align: center;
+	padding: 10px;
+}
+
+.Copyright{
+	width: 100%;
+	text-align: center;
+	background: teal;
+	margin: 0;
+}
+@media screen and (max-width:600px) {
+	.btm{
+		height: unset;
+	}
+	.btm-container{
+		display: flex;
+		flex-wrap: wrap;
+		height: unset;		
+	}
+	.btm-left{
+		width: 80%;
+		margin: 0px;
+		margin: auto;
+		text-align: center;
+	}
+	.btm-right{
+		width: 80%;
+		margin: 0px;
+		margin: auto;
+		text-align: center;
+	}
+}

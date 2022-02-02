@@ -1,0 +1,207 @@
+body{
+    background: white;
+    display: none;
+}
+.navbar{
+    background: white;
+}
+.container{
+    width: 100%;
+    margin: 0;
+}
+.left-col{
+    border: solid 1px teal;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+}
+
+.left-div{
+    width: 100%;
+    margin-top: 25vh;
+}
+.left-div div{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    background: teal;
+    border: solid 1px white;
+}
+.left-div div>a{
+    text-decoration: none;
+    /* padding: 10px; */
+    background: teals;
+    color: white;
+    background: teal;
+    width: 100%;
+}
+
+/* right column */
+
+.right-col{
+    width: 79%;
+    /* border: solid 1px red; */
+    margin-left: 20%;
+    justify-content: center;
+    align-items: center;
+    /* background: teal; */
+}
+#blog{
+    width: 98%;
+    margin: auto;
+    background: white;
+    cursor: pointer;
+    display: none;
+    display: flex;
+    flex-direction: column;
+}
+.blog-title{
+    width: 100%;
+    text-align: center;
+}
+.blog-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.blog-pc{
+    width: 40%;
+    /* border: solid 1px red; */
+    text-align: center;
+    margin: auto;
+}
+.blog-pc img{
+    background: gray;
+    height: 300px;
+    width: 100%;
+}
+#upload{
+    padding: 10px 20px;
+}
+.blog-desc{
+    width: 60%;
+    border: solid 1px black;
+    margin: auto;
+    margin-top: 40px;
+}
+.blog-desc div{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+}
+textarea{
+    background: rgb(255, 255, 255);
+    border: solid 2px teal;
+}
+.blog-content{
+    text-align: center;
+    width: 100%;
+}
+.blog-content div{
+    padding: 20px;
+}
+#two{
+    background: white;
+    color: black;
+}
+#uploadArticle{
+    background: teal;
+    padding: 15px 40px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* comments */
+#comment{
+    /* margin-top: 20vh; */
+    background: white;
+    /* display: none; */
+    background: teal;
+}
+#fcomment{
+    margin: 40px;
+}
+.messageInfo{
+    width: 60%;
+    margin: auto;
+    border: solid 1px black;
+    padding: 30px;
+    border-radius: 20px;
+    background: white;
+    margin-top: 20px;
+}
+.cont div{
+    text-align: left;
+    padding: 10px;
+    background: rgb(236, 222, 222);
+}
+.mess{
+    background: rgb(151, 228, 211);
+    padding: 20px;
+}
+
+/* Blog */
+
+#pContainer{
+    margin: 0;
+    display: none;
+    background: white;
+}
+.dltBtn{
+    background: rgb(190, 13, 13);
+    padding: 10px;
+    border: none;
+    color: white;
+}
+.updBtn{
+    background: rgb(72, 122, 48);
+    padding: 10px;
+    margin-left: 215px;
+    border: none;
+}
+.prow{
+    /* display: none; */
+    /* background: teal; */
+}
+/* ----- profile ------------- */
+.profileContainer{
+    width: 100%;
+    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+}
+.ppic{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.ppic img{
+    border-radius: 50%;
+    height: 300px;
+    border: solid 2px orange;
+    width: 30%;
+}
+.pdetails{
+    width: 100%;
+    text-align: center;
+}
+.profileForm{
+    display: flex;
+    flex-direction: column;
+}
+.profileForm div{
+    padding: 20px 0px;
+}
+.profileForm div>label{
+    font-size: x-large;
+}
+.profileForm div>input{
+    border: none;
+    padding: 10px 60px;
+    border-radius: 10px;
+    font-size: large;
+}

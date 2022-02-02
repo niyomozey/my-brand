@@ -1,0 +1,64 @@
+<!DOCTYPE hmtl>
+<html>
+
+<head>
+	<title>Portifolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/My Brand.css">
+	<link rel="stylesheet" type="text/css" href="../css/signin.css">
+	<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="navbar" id="navbar">		
+		<a href="javascript:void(0)" onclick="myFunction()" class="homeIcon" id="hicon">
+			<i class="fa fa-bars fa-2x" id="ic"></i>
+		</a>
+		<ul class="nav-list" id="topnavbar">			
+			<li class="logo">NIYONKURU<br>MOISE</li>
+			<div>
+				<li><a href="../index.html">Home</a> </li>
+				<li> <a href="../index.html#about">About us</a></li>
+				<li> <a href="./contactus.html">Contact</a></li>
+				<li> <a href="./blog.html">Blog</a></li>
+				<li class="login"><button onclick="location.href='./signin.html'">Login</button></li>
+								
+			</div>			
+		</ul>		
+	</div>
+	<div class="l-container">
+		<div class="s-row">
+			<div class="l-col1">
+				<div>
+					<h1>Signup</h1>
+					<H3>Enter your credintials</H3>
+				</div>
+			</div>
+			<div class="l-col2">
+				<form class="login-form" action="">
+					<div>
+						<h2>Signup</h2>
+					</div>
+					<div><input type="text" id="fullname" name="fullname" placeholder="Fullname"><p class="ferror"></p></div>
+					<div><input type="text" id="telphone" name="telphone" placeholder="Telphone"><p class="terror"></p></div>
+					<div><input type="text" id="email" name="email" placeholder="Email"><p class="eerror"></p></div>
+					<div><input type="text" id="username" name="username" placeholder="username"><p class="uerror"></p></div>
+					<div><input type="password" id="password" name="password" placeholder="Password"><p class="perror"></p></div>
+					<div><input type="password" id="Cpassword" name="Cpassword" placeholder="Confirm Password"><br>
+					</div>
+					<p id="error"></p>
+					<div><input id="send" name="send" value="send"></div>
+					<div>
+						<p class="signinMessage">If Already have account <a href="./signin.html">Sign In</a></p>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="module" src="../js/signup.js"></script>
+	
+</body>
+
+</html>

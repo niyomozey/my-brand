@@ -1,0 +1,127 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+	<title>dashboard</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/My Brand.css"> 
+	<link rel="stylesheet" type="text/css" href="../css/dashboard.css"> 
+	<link rel="stylesheet" type="text/css" href="../css/portfolio.css">
+	<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="navbar" id="navbar">		
+		<a href="javascript:void(0)" onclick="myFunction()" class="homeIcon" id="hicon">
+			<i class="fa fa-bars fa-2x" id="ic"></i>
+		</a>
+		<ul class="nav-list" id="topnavbar">			
+			<li class="logo">NIYONKURU<br>MOISE</li>
+			<div>
+				<li class="login"><button id="logout">Logout</button></li>								
+			</div>			
+		</ul>		
+	</div>
+
+	<div class="container">
+		<div class="left-col">
+			<div class="left-div">
+				<div><a href="../index.html">Home</a></div>
+				<div><a id="msgbtn" href="#">Messages</a></div>
+				<div><a id="createAr" href="#">Create Articles</a></div>
+				<div><a id="viewArt" href="#">View Articles</a></div>
+				<div><a href="#">Profile</a></div>				
+			</div>
+		</div>
+		<div class="right-col">
+			<div id="blog">
+				<div class="blog-title">
+					<h1>Create article</h1>
+				</div>
+				<div class="blog-header">										
+					<div class="blog-pc">
+						<img id="bpc" alt="Blog picture">
+						<input id="upload" onchange="loadFile(event)" type="file" accept="image/*">
+					</div>
+					<div class="blog-desc">
+						<div>
+							<label >Author</label>
+							<input id="author" type="text" ><br>
+						</div>
+						<div>
+							<label >Article Title</label><br>
+							<textarea name="description" id="desc" cols="45" rows="8" placeholder="Enter Article title here...."></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="blog-content">
+					<h4>Enter your Article content</h4>
+					<textarea name="context" id="content" cols="100" rows="23" placeholder="text your article here....."></textarea>
+					<div>
+						<button id="uploadArticle">Upload Article</button>
+					</div>
+				</div>
+			</div>
+			<!-- comments -->
+			<div id="comment">
+					<div id="fcomment">
+
+					</div>			
+			</div>
+			<!-- blogs -->
+			<div class="pContainer" id="pContainer">
+				
+					<div class="pRow">
+						<div class="pColumn" id="pColumn">
+							
+						</div>
+					</div>				
+			</div>
+			<!-- Profile -->
+			<div class="profileContainer">
+				<div class="ppic">
+					<h1>User profile</h1>
+					<img src="../materials/mozey pic.png">
+				</div>
+				<div class="pdetails">
+					<button id="edit">Edit</button>
+					<form class="profileForm">
+						<div>
+							<label>Names: </label><br>
+							<input class="pdetail" type="text" value="Niyonkuru Moise">
+						</div>						
+						<div>
+							<label>Names: </label><br>
+							<input class="pdetail" type="text" value="moiseniyonkuru1@gmail.com">
+						</div>
+						<div>
+							<label>Names: </label><br>
+							<input class="pdetail" type="text" value="Username">
+						</div>
+						
+						<div>
+							<label>Names: </label><br>
+							<input class="pdetail" type="text" value="telphone">
+						</div>
+						<div>
+							<label>Password: </label><br>
+							<input class="pdetail" type="password" value="password">
+						</div>
+						<div>
+							<label>Names: </label><br>
+							<input class="pdetail" type="password" value="confirmpassword">
+						</div>
+						
+					</form> 
+					<button id="updateProfile" type="submit"  disabled="true">Update</button>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+
+	
+
+	<script type="module" src="../js/dashboard.js"></script>
+	
+</body>
+</html>

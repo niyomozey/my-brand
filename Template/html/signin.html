@@ -1,0 +1,54 @@
+<!DOCTYPE hmtl>
+<html>
+
+<head>
+	<title>Portifolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/My Brand.css">
+	<link rel="stylesheet" type="text/css" href="../css/signin.css">
+	<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="navbar" id="navbar">		
+		<a href="javascript:void(0)" onclick="myFunction()" class="homeIcon" id="hicon">
+			<i class="fa fa-bars fa-2x" id="ic"></i>
+		</a>
+		<ul class="nav-list" id="topnavbar">			
+			<li class="logo">NIYONKURU<br>MOISE</li>
+			<div>
+				<li><a href="../index.html">Home</a> </li>
+				<li> <a href="../index.html#about">About us</a></li>
+				<li> <a href="./contactus.html">Contact</a></li>
+				<li> <a href="./blog.html">Blog</a></li>
+				<li class="login"><button onclick="location.href='./signup.html'">Signup</button></li>
+								
+			</div>			
+		</ul>		
+	</div>
+	<div class="l-container">
+		<div class="l-row">
+			<div class="l-col1">
+				<div>
+					<h1>Login</h1>
+					<H3>Enter your credintials</H3>
+				</div>
+			</div>
+			<div class="l-col2">
+				<form class="login-form">
+					<div><input type="text" id="username" name="username" placeholder="Username"><br></div>
+					<div><input type="password" id="password" name="password" placeholder="Password"><br></div>
+					<div><input type="button" id="send" name="send" value="Login"></div>
+					<p id="error"></p>
+					<div>
+						<p>If not have account <a href="./signup.html">Signup</a></p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="module" src="../js/signin.js"></script>
+</body>
+
+</html>
